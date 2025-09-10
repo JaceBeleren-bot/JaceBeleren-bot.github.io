@@ -1,0 +1,612 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Adam Smith\n(1723–1790)",
+      "title": "Fundador da Economia Política.",
+      "ref": "Smith, A. (1776). The Wealth of Nations.",
+      "group": "Smith",
+      "color": "#1abc9c"
+    },
+    {
+      "id": 2,
+      "label": "Divisão do Trabalho",
+      "title": "Especialização aumenta produtividade.",
+      "ref": "Smith, A. (1776). The Wealth of Nations.",
+      "group": "Concept",
+      "color": "#3498db"
+    },
+    {
+      "id": 3,
+      "label": "Mão Invisível / Mercado",
+      "title": "Mercados coordenam interesses individuais.",
+      "ref": "Smith, A. (1776). The Wealth of Nations.",
+      "group": "Concept",
+      "color": "#3498db"
+    },
+    {
+      "id": 4,
+      "label": "Valor e Preço",
+      "title": "Discussões sobre valor-trabalho vs. preço de mercado.",
+      "ref": "Smith, A. (1776). The Wealth of Nations.",
+      "group": "Concept",
+      "color": "#3498db"
+    },
+    {
+      "id": 5,
+      "label": "Livre Comércio",
+      "title": "Smith defende livre comércio.",
+      "ref": "Smith, A. (1776). The Wealth of Nations.",
+      "group": "Concept",
+      "color": "#3498db"
+    },
+    {
+      "id": 6,
+      "label": "Ricardo",
+      "title": "Vantagens Comparativas; valor-trabalho.",
+      "ref": "Ricardo, D. (1817). On the Principles of Political Economy and Taxation.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 7,
+      "label": "Marx",
+      "title": "Mais-valia, exploração, alienação.",
+      "ref": "Marx, K. (1867). O Capital.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 8,
+      "label": "Keynes",
+      "title": "Papel do Estado na demanda agregada.",
+      "ref": "Keynes, J. M. (1936). The General Theory.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 9,
+      "label": "List",
+      "title": "Protecionismo para indústrias nacionais.",
+      "ref": "List, F. (1841). The National System of Political Economy.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 10,
+      "label": "Hayek",
+      "title": "Ordem espontânea.",
+      "ref": "Hayek, F. A. (1944). The Road to Serfdom.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 11,
+      "label": "Marshall",
+      "title": "Marginalismo, microeconomia moderna.",
+      "ref": "Marshall, A. (1890). Principles of Economics.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 12,
+      "label": "Douglass North",
+      "title": "Instituições e desenvolvimento.",
+      "ref": "North, D. C. (1990). Institutions, Institutional Change and Economic Performance.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 13,
+      "label": "Contemporâneos\n(Piketty, Sen, Mazzucato)",
+      "title": "Desigualdade, capacidades, inovação.",
+      "ref": "Piketty, T. (2014). | Sen, A. (1999). | Mazzucato, M. (2013).",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 14,
+      "label": "Consequências & Debates",
+      "title": "Desigualdade, regulação, inovação.",
+      "ref": "Diversos autores.",
+      "group": "Outcome",
+      "color": "#9b59b6"
+    },
+    {
+      "id": 15,
+      "label": "Jean-Baptiste Say",
+      "title": "Lei dos Mercados.",
+      "ref": "Say, J.-B. (1803). Traité d’économie politique.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 16,
+      "label": "Thomas Malthus",
+      "title": "Teoria populacional.",
+      "ref": "Malthus, T. (1798). Essay on Population.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 17,
+      "label": "Karl Polanyi",
+      "title": "Crítica ao mercado autorregulado.",
+      "ref": "Polanyi, K. (1944). The Great Transformation.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 18,
+      "label": "Joseph Schumpeter",
+      "title": "Inovação e destruição criadora.",
+      "ref": "Schumpeter, J. A. (1942). Capitalism, Socialism and Democracy.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 19,
+      "label": "Milton Friedman",
+      "title": "Monetarismo.",
+      "ref": "Friedman, M. (1962). Capitalism and Freedom.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 20,
+      "label": "Escola Austríaca",
+      "title": "Mises, Böhm-Bawerk.",
+      "ref": "Mises, L. (1949). Human Action.",
+      "group": "School",
+      "color": "#e74c3c"
+    },
+    {
+      "id": 21,
+      "label": "Thorstein Veblen",
+      "title": "Consumo conspícuo.",
+      "ref": "Veblen, T. (1899). The Theory of the Leisure Class.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 22,
+      "label": "Celso Furtado",
+      "title": "Subdesenvolvimento e dependência.",
+      "ref": "Furtado, C. (1959). Formação Econômica do Brasil.",
+      "group": "Author",
+      "color": "#e67e22"
+    },
+    {
+      "id": 23,
+      "label": "Maria da Conceição Tavares",
+      "title": "Estruturalismo, dependência.",
+      "ref": "Tavares, M. C. (1972).",
+      "group": "Author",
+      "color": "#27ae60"
+    },
+    {
+      "id": 24,
+      "label": "Fernando H. Cardoso",
+      "title": "Teoria da Dependência; Plano Real.",
+      "ref": "Cardoso, F. H. & Faletto, E. (1969).",
+      "group": "Author",
+      "color": "#2980b9"
+    },
+    {
+      "id": 25,
+      "label": "Raúl Prebisch",
+      "title": "CEPAL, termos de troca.",
+      "ref": "Prebisch, R. (1949).",
+      "group": "Author",
+      "color": "#8e44ad"
+    },
+    {
+      "id": 26,
+      "label": "Bresser-Pereira",
+      "title": "Novo-desenvolvimentismo.",
+      "ref": "Bresser-Pereira, L. C. (2010).",
+      "group": "Author",
+      "color": "#c0392b"
+    },
+    {
+      "id": 27,
+      "label": "Roberto Campos",
+      "title": "Liberal, PAEG.",
+      "ref": "Campos, R. (1994).",
+      "group": "Author",
+      "color": "#d35400"
+    },
+    {
+      "id": 28,
+      "label": "Getúlio Vargas",
+      "title": "Industrialização por substituição de importações.",
+      "ref": "Fausto, B. (1995).",
+      "group": "Leader",
+      "color": "#16a085"
+    },
+    {
+      "id": 29,
+      "label": "Dilma Rousseff",
+      "title": "PAC, subsídios.",
+      "ref": "Discursos oficiais.",
+      "group": "Leader",
+      "color": "#f39c12"
+    },
+    {
+      "id": 100,
+      "label": "Revolução Industrial",
+      "title": "Transformações produtivas base da análise de Smith.",
+      "ref": "Landes, D. (1969).",
+      "group": "Evento",
+      "color": "#ff4757"
+    },
+    {
+      "id": 101,
+      "label": "Grande Depressão (1929)",
+      "title": "Colapso que deu força às ideias keynesianas.",
+      "ref": "Kindleberger, C. (1973).",
+      "group": "Evento",
+      "color": "#ff4757"
+    },
+    {
+      "id": 102,
+      "label": "Plano Marshall (1948)",
+      "title": "Reconstrução da Europa.",
+      "ref": "De Long & Eichengreen (1991).",
+      "group": "Evento",
+      "color": "#ff4757"
+    },
+    {
+      "id": 103,
+      "label": "Crise do Petróleo (1973)",
+      "title": "Inflação e crise keynesiana.",
+      "ref": "Yergin, D. (1991).",
+      "group": "Evento",
+      "color": "#ff4757"
+    },
+    {
+      "id": 104,
+      "label": "Plano Real (1994)",
+      "title": "Estabilização monetária.",
+      "ref": "Franco, G. H. B. (1995).",
+      "group": "Evento",
+      "color": "#ff4757"
+    },
+    {
+      "id": 105,
+      "label": "PAC (2007)",
+      "title": "Programa de Aceleração do Crescimento.",
+      "ref": "Documentos oficiais.",
+      "group": "Evento",
+      "color": "#ff4757"
+    },
+    {
+      "id": 106,
+      "label": "Constituição de 1988",
+      "title": "Novo pacto social e regulação econômica.",
+      "ref": "Brasil (1988).",
+      "group": "Evento",
+      "color": "#ff4757"
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "label": "propõe → Divisão do Trabalho",
+      "id": "e662643e-f4af-4294-a563-f94812f23098"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "propõe → Mão Invisível",
+      "id": "10e095ce-c373-48c2-99ad-0fc15039c195"
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "analisa → Valor e Preço",
+      "id": "87bb622f-09b0-4153-885f-c8fa669ef80c"
+    },
+    {
+      "from": 1,
+      "to": 5,
+      "label": "defende → Livre Comércio",
+      "id": "b474ffe0-d418-4e18-8d2c-725a497a9297"
+    },
+    {
+      "from": 2,
+      "to": 7,
+      "label": "criticada por Marx → Alienação",
+      "id": "f7fe4af0-b2f3-4812-8ceb-f3efe506c67a"
+    },
+    {
+      "from": 3,
+      "to": 8,
+      "label": "criticada por Keynes → Intervenção Estatal",
+      "id": "04affee0-6dc6-4537-8b06-0e0fd0f036c8"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "desenvolvida por Ricardo",
+      "id": "4ea55454-6c2b-455c-a889-8f244e248321"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "label": "base para crítica de Marx",
+      "id": "9ac4b8af-7d17-44a6-bd29-5366f4466988"
+    },
+    {
+      "from": 5,
+      "to": 9,
+      "label": "contestada por List",
+      "id": "67782c10-20fd-4270-bddb-31c644f281d4"
+    },
+    {
+      "from": 3,
+      "to": 10,
+      "label": "reaproveitada por Hayek",
+      "id": "cb333f79-dcf8-42b0-83e2-b47553c4a653"
+    },
+    {
+      "from": 4,
+      "to": 11,
+      "label": "evolui para Marshall",
+      "id": "82130749-9eb4-4f2f-a9bb-53b97d93dd9f"
+    },
+    {
+      "from": 1,
+      "to": 12,
+      "label": "inspira North",
+      "id": "96f8fb4f-5aa9-4dcb-8166-81e4c1bebe05"
+    },
+    {
+      "from": 1,
+      "to": 13,
+      "label": "inspira Contemporâneos",
+      "id": "b924dc0b-cb57-4e05-b604-bce674b6fdfc"
+    },
+    {
+      "from": 1,
+      "to": 15,
+      "label": "influência em Say",
+      "id": "1087f1a1-f474-46ce-b975-6b732da25c39"
+    },
+    {
+      "from": 1,
+      "to": 16,
+      "label": "debate indireto → População",
+      "id": "e719ca57-ab24-4823-8731-89f8b0cfaafe"
+    },
+    {
+      "from": 6,
+      "to": 16,
+      "label": "debate com Malthus",
+      "id": "90033111-2e67-48ea-a49e-07a98ee4d849"
+    },
+    {
+      "from": 7,
+      "to": 17,
+      "label": "antecedente crítico → Polanyi",
+      "id": "f19f4933-2543-4911-aeb3-72c0fe092568"
+    },
+    {
+      "from": 18,
+      "to": 13,
+      "label": "inspira debates de inovação",
+      "id": "13dab5c9-89d9-4a31-ac1f-5b5cdcb9098a"
+    },
+    {
+      "from": 19,
+      "to": 10,
+      "label": "afinidade → Liberalismo",
+      "id": "9b31b079-1d7a-4b23-9b34-09b1f52f3b0d"
+    },
+    {
+      "from": 8,
+      "to": 19,
+      "label": "debate → Keynes vs. Monetarismo",
+      "id": "776e2c72-b8a1-40ec-a311-7ec74e77eea3"
+    },
+    {
+      "from": 20,
+      "to": 10,
+      "label": "afinidade → Austríaca e Hayek",
+      "id": "2736027c-2f08-43b9-8b13-7df0959c4ec8"
+    },
+    {
+      "from": 21,
+      "to": 12,
+      "label": "precursores → Instituições",
+      "id": "d058ac7f-8c72-4d9d-a196-db131525598f"
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "label": "influencia Tavares",
+      "id": "b823b9c4-0238-4ac0-84d1-d1fd77078759"
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "label": "debate Dependência",
+      "id": "2a32daaa-26cb-4a4c-83af-3a563cb1a248"
+    },
+    {
+      "from": 23,
+      "to": 26,
+      "label": "debate → Política Fiscal",
+      "id": "9934bb15-2afd-4399-b241-213d31f6bcce"
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "label": "dialoga com Prebisch",
+      "id": "bee69329-835d-4965-a103-c7b7d2c347f2"
+    },
+    {
+      "from": 25,
+      "to": 22,
+      "label": "inspira Furtado",
+      "id": "f1f59f4f-7d6f-4d67-8f6f-b4415a01fb06"
+    },
+    {
+      "from": 26,
+      "to": 24,
+      "label": "divergência com FHC",
+      "id": "dea9b43b-4ade-4a0f-a1fc-6724e8a0f4d0"
+    },
+    {
+      "from": 27,
+      "to": 24,
+      "label": "contraponto → Liberalismo",
+      "id": "21f3d687-f2f3-4553-b3ee-ca709336cb57"
+    },
+    {
+      "from": 28,
+      "to": 22,
+      "label": "base histórica → Industrialização",
+      "id": "19720273-85b2-4eb1-a0c2-1f3c34f33cfa"
+    },
+    {
+      "from": 29,
+      "to": 23,
+      "label": "inspiração desenvolvimentista",
+      "id": "6d1f55a2-3b34-4c28-b19c-24886a91728f"
+    },
+    {
+      "from": 100,
+      "to": 2,
+      "label": "contexto → Revolução Industrial",
+      "id": "2db44d58-33ee-4060-a5ed-1670760d5b45"
+    },
+    {
+      "from": 101,
+      "to": 8,
+      "label": "origem → Keynes",
+      "id": "15d60aa3-8a50-44b6-848f-712459209000"
+    },
+    {
+      "from": 102,
+      "to": 8,
+      "label": "influência → Keynesianos",
+      "id": "7f691c08-244a-4a17-bc38-5916300a32af"
+    },
+    {
+      "from": 103,
+      "to": 10,
+      "label": "fortaleceu → Críticas ao keynesianismo",
+      "id": "a9037ca4-3c74-43c4-a13a-3139344dbadf"
+    },
+    {
+      "from": 104,
+      "to": 24,
+      "label": "implementado por → FHC",
+      "id": "ec531f0b-aabe-4e10-90e8-d9e35c275217"
+    },
+    {
+      "from": 105,
+      "to": 29,
+      "label": "implementado por → Dilma Rousseff",
+      "id": "207b6ca5-798d-4846-9bb0-1cc451c3c2f7"
+    },
+    {
+      "from": 106,
+      "to": 22,
+      "label": "impacto em → Desenvolvimento",
+      "id": "cdcad6d0-8d56-44c3-838c-872d4226ec39"
+    },
+    {
+      "from": 1,
+      "to": 14,
+      "label": "relevante hoje → Debate sobre Desigualdade",
+      "id": "4384f0b8-d4d8-4743-834a-3531ed422bb6"
+    },
+    {
+      "from": 1,
+      "to": 12,
+      "label": "fundamenta → Instituições modernas",
+      "id": "612fa0b9-d293-45b0-901f-b72c73e72f35"
+    },
+    {
+      "from": 1,
+      "to": 22,
+      "label": "influência indireta → Desenvolvimento no Brasil",
+      "id": "93dddd0f-d398-4249-8b84-c4d2e706937c"
+    },
+    {
+      "from": 1,
+      "to": 100,
+      "label": "contextualizado pela → Revolução Industrial",
+      "id": "bb18fbac-4b57-4602-9af7-ba745253f4a6"
+    },
+    {
+      "from": 1,
+      "to": 101,
+      "label": "contraste com → Crises do capitalismo",
+      "id": "a33944e2-8f1b-4d6d-bce7-cf60b87184fc"
+    },
+    {
+      "from": 1,
+      "to": 103,
+      "label": "debates reabertos em → Crises energéticas",
+      "id": "d29a184d-1dff-44b0-bd4e-ede1aa9fea22"
+    },
+    {
+      "from": 1,
+      "to": 104,
+      "label": "relevância → Políticas de estabilização monetária",
+      "id": "2454fc42-6d9f-42ff-81b2-34f6ac78a691"
+    },
+    {
+      "from": 1,
+      "to": 106,
+      "label": "inspira → Papel do Estado e Regulação",
+      "id": "1c66886a-0a96-45b4-8a93-e7df1ecea1e9"
+    },
+    {
+      "from": 2,
+      "to": 18,
+      "label": "relaciona-se com → Inovação e destruição criadora",
+      "id": "f3523b2c-30b1-424b-b5a6-255872a0b889"
+    },
+    {
+      "from": 3,
+      "to": 19,
+      "label": "debate renovado com → Monetarismo e Liberalismo",
+      "id": "6c5a4d28-b1a5-4359-a8f3-9f928cc148c9"
+    },
+    {
+      "from": 3,
+      "to": 13,
+      "label": "questão central → Regulação de mercados globais",
+      "id": "7bd779e7-4512-4eaa-80d0-4fbd45f0e33e"
+    },
+    {
+      "from": 4,
+      "to": 21,
+      "label": "dialoga com → Consumo e valor social",
+      "id": "34164eb6-4ea7-43dc-83d0-a77e2de0e359"
+    },
+    {
+      "from": 5,
+      "to": 14,
+      "label": "relevante em → Comércio Internacional Contemporâneo",
+      "id": "26dc519e-beff-4b7b-b54f-7292464a93ae"
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "O que é valor? ",
+      "id": "92373d70-7aff-4e54-9f66-ca21f3c96a34"
+    },
+    {
+      "from": 3,
+      "to": 7,
+      "label": "Que mão invisível é essa?",
+      "id": "6dc3840d-63c0-411f-b328-a9dbceae7e31"
+    }
+  ]
+}

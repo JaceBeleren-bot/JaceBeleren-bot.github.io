@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mapa Mental Interativo — Adam Smith e seus Desdobramentos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; height: 100vh; }
+    #sidebar {
+      width: 300px;
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 15px;
+      overflow-y: auto;
+    }
+    #sidebar h3 { margin-top: 0; font-size: 18px; text-align: center; }
+    #nodeList { font-size: 14px; line-height: 1.5em; }
+    #nodeList div { margin-bottom: 6px; padding: 4px; border-bottom: 1px solid rgba(255,255,255,0.2); border-radius: 4px; }
+
+    #main { flex: 1; display: flex; flex-direction: column; }
+    #menu { padding: 10px; background: #34495e; border-bottom: 1px solid #222; display: flex; gap: 5px; flex-wrap: wrap; }
+    #menu button { background: #1abc9c; color: #fff; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; transition: 0.2s; }
+    #menu button:hover { background: #16a085; }
+    #mynetwork { flex: 1; border: 1px solid #bdc3c7; min-height: 500px; }
+    input[type="file"] { display: none; }
+  </style>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+
+  <div id="sidebar">
+    <h3>📌 Nós (ID → Nome)</h3>
+    <div id="nodeList"></div>
+  </div>
+
+  <div id="main">
+    <div id="menu">
+      <button onclick="toggleEventos()">🎭 Mostrar/Ocultar Eventos</button>
+      <button onclick="addNode()">➕ Adicionar Nó</button>
+      <button onclick="addEdge()">➕ Adicionar Conexão</button>
+      <button onclick="saveGraph()">💾 Salvar Grafo</button>
+      <button onclick="document.getElementById('loadFile').click()">📂 Carregar Grafo</button>
+      <input type="file" id="loadFile" accept=".json" onchange="loadGraph(event)">
+    </div>
+    <div id="mynetwork"></div>
+  </div>
+
+  <script>
+    // --------------------------
+    // Dados iniciais dos nós
+    // --------------------------
+    let eventosVisiveis = true;
+
+      function toggleEventos() {
+        eventosVisiveis = !eventosVisiveis;
+        nodes.forEach(node => {
+          if(node.group === "Evento") {
+            nodes.update({id: node.id, hidden: !eventosVisiveis});
+          }
+        });
+      }
+
+
+
+    const nodes = new vis.DataSet([
+      {id:1,label:"Adam Smith\n(1723–1790)",title:"Fundador da Economia Política. Divisão do Trabalho, Mão Invisível, Moral Sentiments.",ref:"Smith, A. (1776). The Wealth of Nations.",group:"Smith", color:"#1abc9c"},
+      {id:2,label:"Divisão do Trabalho",title:"Especialização aumenta produtividade, mas pode gerar alienação.",ref:"Smith, A. (1776). The Wealth of Nations, Livro I.",group:"Concept", color:"#3498db"},
+      {id:3,label:"Mão Invisível / Mercado",title:"Mercados coordenam interesses individuais para bem coletivo — mas com falhas.",ref:"Smith, A. (1776). The Wealth of Nations.",group:"Concept", color:"#3498db"},
+      {id:4,label:"Valor e Preço",title:"Discussões sobre valor-trabalho vs. preço de mercado.",ref:"Smith, A. (1776). The Wealth of Nations, Livro I, Cap. V.",group:"Concept", color:"#3498db"},
+      {id:5,label:"Livre Comércio",title:"Smith defende livre comércio e ganhos de especialização.",ref:"Smith, A. (1776). The Wealth of Nations, Livro IV.",group:"Concept", color:"#3498db"},
+      {id:6,label:"Ricardo\n(1772–1823)",title:"Teoria das Vantagens Comparativas; valor-trabalho.",ref:"Ricardo, D. (1817). On the Principles of Political Economy and Taxation.",group:"Author", color:"#e67e22"},
+      {id:7,label:"Marx\n(1818–1883)",title:"Crítica radical: mais-valia, exploração, alienação.",ref:"Marx, K. (1867). O Capital, Vol. I.",group:"Author", color:"#e67e22"},
+      {id:8,label:"Keynes\n(1883–1946)",title:"Crítica ao laissez-faire: papel do Estado na demanda agregada.",ref:"Keynes, J. M. (1936). The General Theory of Employment, Interest and Money.",group:"Author", color:"#e67e22"},
+      {id:9,label:"List / Protecionismo",title:"Defende proteção às indústrias nacionais.",ref:"List, F. (1841). The National System of Political Economy.",group:"Author", color:"#e67e22"},
+      {id:10,label:"Hayek\n(1899–1992)",title:"Ordem espontânea, dispersão do conhecimento.",ref:"Hayek, F. A. (1944). The Road to Serfdom.",group:"Author", color:"#e67e22"},
+      {id:11,label:"Marshall\n(1842–1924)",title:"Marginalismo, microeconomia moderna.",ref:"Marshall, A. (1890). Principles of Economics.",group:"Author", color:"#e67e22"},
+      {id:12,label:"Douglass North\n(1920–2015)",title:"Instituições moldam resultados econômicos.",ref:"North, D. C. (1990). Institutions, Institutional Change and Economic Performance.",group:"Author", color:"#e67e22"},
+      {id:13,label:"Contemporâneos\n(Piketty, Sen, Mazzucato)",title:"Desigualdade, capacidades humanas, inovação e papel do Estado.",ref:"Piketty, T. (2014). Capital in the Twenty-First Century. | Sen, A. (1999). Development as Freedom. | Mazzucato, M. (2013). The Entrepreneurial State.",group:"Author", color:"#e67e22"},
+      {id:14,label:"Consequências & Debates",title:"Desigualdade, regulação, desenvolvimento, instituições, inovação.",ref:"Diversos autores contemporâneos.",group:"Outcome", color:"#9b59b6"}
+    ]);
+
+    // --------------------------
+    // Conexões iniciais
+    // --------------------------
+    const edges = new vis.DataSet([
+      {from:1,to:2,label:"propõe → Divisão do Trabalho"},
+      {from:1,to:3,label:"propõe → Mão Invisível"},
+      {from:1,to:4,label:"analisa → Valor e Preço"},
+      {from:1,to:5,label:"defende → Livre Comércio"},
+      {from:2,to:7,label:"criticada por Marx → Alienação"},
+      {from:3,to:8,label:"criticada por Keynes → Intervenção Estatal"},
+      {from:4,to:6,label:"desenvolvida por Ricardo"},
+      {from:6,to:7,label:"base para crítica de Marx"},
+      {from:5,to:9,label:"contestada por List → Protecionismo"},
+      {from:3,to:10,label:"reaproveitada por Hayek → Ordem espontânea"},
+      {from:4,to:11,label:"evolui para Marshall → Marginalismo"},
+      {from:1,to:12,label:"inspira North → Instituições"},
+      {from:1,to:13,label:"inspira debates contemporâneos"},
+      {from:2,to:14,label:"gera debates → Trabalho e Produção"},
+      {from:3,to:14,label:"gera debates → Regulação e Estado"},
+      {from:4,to:14,label:"gera debates → Teoria do Valor"},
+      {from:5,to:14,label:"gera debates → Comércio Internacional"}
+    ]);
+
+    const container = document.getElementById('mynetwork');
+    const data = { nodes: nodes, edges: edges };
+    const options = {
+      nodes: { shape:'box', margin:14, font:{multi:'html', size:16} },
+      edges: { font:{align:'middle'}, smooth:{type:'continuous'}, arrows:'to' },
+      interaction: { hover:true, navigationButtons:true, keyboard:true },
+      physics: { 
+        enabled:true,
+        solver:"repulsion",
+        repulsion:{centralGravity:0.01, springLength:280, springConstant:0.01, nodeDistance:260, damping:0.09},
+        stabilization:{iterations:250}
+      }
+    };
+    const network = new vis.Network(container, data, options);
+
+    // --------------------------
+    // Atualiza sidebar
+    // --------------------------
+    function updateSidebar() {
+      const listDiv = document.getElementById("nodeList");
+      listDiv.innerHTML = "";
+      nodes.forEach(n=>{
+        const el=document.createElement("div");
+        el.textContent=`${n.id} → ${n.label.replace(/\n/g," ")}`;
+        listDiv.appendChild(el);
+      });
+    }
+    updateSidebar();
+
+    // --------------------------
+    // Clique em nós ou arestas
+    // --------------------------
+    network.on("click", function(params){
+      if(params.nodes.length===1){
+        const node=nodes.get(params.nodes[0]);
+        alert(node.label + "\n\n" + node.title + "\n\nReferência: " + node.ref);
+      } else if(params.edges.length===1){
+        const edge=edges.get(params.edges[0]);
+        alert("Conexão: " + edge.label);
+      }
+    });
+
+    // --------------------------
+    // Adicionar nós dinamicamente
+    // --------------------------
+    function addNode() {
+      const label = prompt("Nome do novo nó:");
+      const title = prompt("Descrição do novo nó:");
+      const ref = prompt("Referência bibliográfica:");
+      if(label){
+        const newId = Math.max(...nodes.getIds()) + 1;
+        nodes.add({id:newId,label:label,title:title||'',ref:ref||'',group:'Custom', color:'#f39c12'});
+        updateSidebar();
+      }
+    }
+
+    // --------------------------
+    // Adicionar conexões dinamicamente
+    // --------------------------
+    function addEdge() {
+      const from = parseInt(prompt("ID do nó de origem:"));
+      const to = parseInt(prompt("ID do nó de destino:"));
+      const label = prompt("Descrição da conexão:");
+      if(from && to && label){
+        edges.add({from:from,to:to,label:label});
+      }
+    }
+
+    // --------------------------
+    // Salvar grafo em JSON
+    // --------------------------
+    function saveGraph() {
+      const graphData = { nodes: nodes.get(), edges: edges.get() };
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(graphData, null, 2));
+      const dlAnchor = document.createElement('a');
+      dlAnchor.setAttribute("href", dataStr);
+      dlAnchor.setAttribute("download", "grafo_adam_smith.json");
+      document.body.appendChild(dlAnchor);
+      dlAnchor.click();
+      dlAnchor.remove();
+      alert("Grafo salvo como 'grafo_adam_smith.json'");
+    }
+
+    // --------------------------
+    // Carregar grafo a partir de arquivo JSON
+    // --------------------------
+    function loadGraph(event) {
+      const file = event.target.files[0];
+      if(!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const content = JSON.parse(e.target.result);
+        nodes.clear();
+        edges.clear();
+        nodes.add(content.nodes);
+        edges.add(content.edges);
+        updateSidebar();
+        alert("Grafo carregado com sucesso!");
+      };
+      reader.readAsText(file);
+    }
+
+  </script>
+</body>
+</html>
